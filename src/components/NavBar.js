@@ -2,9 +2,25 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 const NavBar = () => {
+
+  // const link = {
+  //   width: '100px',
+  //   padding: '12px',
+  //   margin: '0 6px 6px',
+  //   background: 'blue',
+  //   textDecoration: 'none',
+  //   color: 'white',
+  // }
+
   return (
-    <div>
-      {/*{code here}*/}
+    <div className="navbar">
+      <ul>
+        <li><NavLink to="/" >Home</ NavLink> </li>
+        <li><NavLink to="/movies" >Movies</ NavLink> </li>
+        <li><NavLink to="/directors" >Directors</ NavLink> </li>
+        <li><NavLink to="/actors" >Actors</ NavLink> </li>
+      </ul>
+      
     </div>
   );
 };
